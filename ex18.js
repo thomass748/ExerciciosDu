@@ -1,11 +1,10 @@
-const jogo = {
-  titulo: "Minecraft",
-  genero: "Sandbox",
-  preco: 99
-};
-
-const exibirJogo = ({ titulo, genero, preco }) => {
-  return `O${titulo} é um jogo do gênero ${genero} e custa R$${preco}.`;
+const verificarIdade = (idade) => {
+    if (idade >= 18) {
+        return "Maior de idade";
+    } else {
+        return "Menor de idade";
+    }
 }
 
-console.log(exibirJogo(jogo));
+console.log(verificarIdade(17));
+console.log(verificarIdade(20));
